@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<boby>
+        <div class="detail">
+            <label>ชื่อ : </label>
+            <p id="UsertName"></p>
+            <label>รหัส : </label>
+            <p id="PassWord"></p>
+            <label>ชื่อจริง : </label>
+            <p id="firstName"></p>
+            <label >นามสกุล : </label>
+            <p id="lasttName"></p>
+            <label>เบอร์โทร : </label>
+            <p id="PhoneNumber"></p>
+            <label >อีเมล : </label>
+            <p id="Email"></p>
+        </div>
+    </from>
+
+    <script>
+        const UserName =UserName.getElementById('UserName');
+        const PassWord = document.getElementById('PassWord');
+        const firstName = document.getElementById('firstName');
+        const lastName = document.getElementById('lastName');
+        const PhoneNumber = document.getElementById('PhoneNumber');
+        const Email = document.getElementById('Email');
+
+        UserName.innerHTML= localStorage.getItem('UserName');
+        PassWord.innerHTML = localStorage.getItem('PassWord');
+        firstName.innerHTML = localStorage.getItem('firstName');
+        lastName.innerHTML = localStorage.getItem('lastName');
+        PhoneNumber.innerHTML = localStorage.getItem('PhoneNumber');
+        Email.innerHTML = localStorage.getItem('Email');
+    
+    </script>
+</boby>
+</html>

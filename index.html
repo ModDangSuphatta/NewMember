@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<boby>
+        <h2 id="member"> สมัครสมาชิก</h2>
+    <from id="from">
+        <div class="User-name">
+            <label for="UserName">ชื่อ : </label>
+            <input type="text" id="UserName">
+        </div>
+        <div class="Pass-Word">
+            <label for="PassWord">รหัส : </label>
+            <input type="password" id="PassWord">
+        </div>
+        <div class="first-Name">
+            <label for="firstName">ชื่อจริง : </label>
+            <input type = "text" id="firstName">
+        </div>
+        <div class="last-Name">
+            <label for="lasttName">นามสกุล : </label>
+            <input type = "text" id="lastName">
+        </div>
+        <div class="Phone-Number">
+            <label for="PhoneNumber">เบอร์โทร : </label>
+            <input type = "tel" id="PhoneNumber">
+        </div>
+        <div class="E-mail">
+            <label for="Email">อีเมล : </label>
+            <input type = "email" id="Email">
+        </div>
+        <button type="button" id="submit">บันทึก</button>
+    </from>
+
+    <script>
+        const submitButton =document.getElementById('submit');
+        const UserName = document.getElementById('UserName');
+        const PassWord = document.getElementById('PassWord');
+        const firstName = document.getElementById('firstName');
+        const lastName = document.getElementById('lastName');
+        const PhoneNumber = document.getElementById('PhoneNumber');
+        const Email = document.getElementById('Email');
+
+        submitButton.addEventListener('click',function () {
+            console.log(UserName.value)
+            console.log(PassWord.value)
+            console.log(firstName.value)
+            console.log(lastName.value)
+            console.log(PhoneNumber.value)
+            console.log(Email.value)
+            if(!UserName.value || !PassWord.value || !firstName.value || !lastName.value
+                || !PhoneNumber.value || !Email.value){
+                    return alert('กรุณากรอกข้อมูลให้ครบถ้วน');
+                }
+                location.href ='detail.html';
+
+                localStorage.setItem('UserName', UserName.value);
+                localStorage.setItem('PassWord', PassWord.value);
+                localStorage.setItem('firstName', firstName.value);
+                localStorage.setItem('lastName', lastName.value);
+                localStorage.setItem('PhoneNumber', PhoneNumber.value);
+                localStorage.setItem('Email', Email.value);
+        });
+    </script>
+</boby>
+</html>

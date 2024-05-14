@@ -1,0 +1,50 @@
+#from {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.User-Name
+.Pass-Word
+.first-Name
+.last-Name
+.Phone-Number
+.E-mail {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#submit {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(235, 148, 208, 0.523);
+    border: 2px solid rgb(247, 64, 240);
+    color: rgb(247, 64, 240);
+    border-radius: 10px;
+}
+
+#supmit :hover {
+    background-color : rgba(7247, 64, 240)
+}
+
+input{
+    padding: 10px;
+    border: 2px solid rgb(247, 64, 240);
+    border-radius : 10px;
+}
+
+label{
+    color: rgb(247, 64, 240);
+}
+
+#member {
+    color: rgb(138, 72, 115);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
